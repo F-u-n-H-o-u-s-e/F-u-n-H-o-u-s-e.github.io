@@ -67,12 +67,12 @@ function Restart() {
   document.location.reload();
 }
 
-// function Rools() {
-//   RoolsText.classList.remove("invisible");
-//   matBack.classList.remove("invisible");
-// }
+function FunRools() {
+  RoolsText.classList.remove("invisible");
+  matBack.classList.remove("invisible");
+}
 
 Roll.addEventListener("click", RollTheDice);
 Hold.addEventListener("click", HoldPoint);
 NewGame.addEventListener("click", Restart);
-// Rools.addEventListener("click", Rools);
+Rools.addEventListener("click", FunRools);
