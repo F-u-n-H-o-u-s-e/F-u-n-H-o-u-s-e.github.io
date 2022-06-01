@@ -8,6 +8,9 @@ let TotalPoint1 = document.getElementById("score--1");
 let Player0 = document.querySelector(".player--0");
 let Player1 = document.querySelector(".player--1");
 let Dice = document.querySelector(".dice");
+let Rools = document.querySelector(".btn--rools");
+let RoolsText = document.querySelector(".rools-text");
+let matBack = document.querySelector(".mat_back");
 
 let TotalPoint, NowPoint, GameStatus, activePlaer;
 
@@ -63,6 +66,13 @@ function HoldPoint() {
 function Restart() {
   document.location.reload();
 }
+
+function Rools() {
+  RoolsText.classList.remove("invisible");
+  matBack.classList.remove("invisible");
+}
+
 Roll.addEventListener("click", RollTheDice);
 Hold.addEventListener("click", HoldPoint);
 NewGame.addEventListener("click", Restart);
+Rools.addEventListener("click", Rools);

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #000;
@@ -136,6 +136,29 @@ main {
 .btn--hold {
   top: 46rem;
 }
+.btn--rools {
+  position: absolute;
+  left: 95%;
+  top: 1%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.5rem 2rem;
+  border-radius: 80rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
 
 .btn:active {
   transform: translate(-50%, 3px);
@@ -165,4 +188,25 @@ main {
 
 .invisible {
   display: none;
+}
+
+.rools-text {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 600px;
+  height: 430px;
+  background-color: #f89500ec;
+  border-radius: 30px;
+  color: #000;
+  z-index: 6;
+  font-size: 2.5rem;
+}
+
+.mat_back {
+  position: absolute;
+  background-color: rgba(229, 236, 29, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
