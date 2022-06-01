@@ -37,7 +37,7 @@ function ChangePlayer() {
 function RollTheDice() {
   if (GameStatus) {
     let RandomNumber = Math.trunc(Math.random() * 6 + 1);
-    Dice.src = `Pages/dice${RandomNumber}.png`;
+    Dice.src = `Image/dice${RandomNumber}.png`;
     Dice.classList.remove("invisible");
     if (RandomNumber !== 1) {
       NowPoint += RandomNumber;
