@@ -11,6 +11,7 @@ let Dice = document.querySelector(".dice");
 let Rools = document.querySelector(".btn--rools");
 let RoolsText = document.querySelector(".rools-text");
 let matBack = document.querySelector(".mat_back");
+let CloseRools = document.querySelector(".close-rools");
 
 let TotalPoint, NowPoint, GameStatus, activePlaer;
 
@@ -71,8 +72,14 @@ function FunRools() {
   RoolsText.classList.remove("invisible");
   matBack.classList.remove("invisible");
 }
+function CloseFunRools() {
+  RoolsText.classList.add("invisible");
+  matBack.classList.add("invisible");
+}
 
 Roll.addEventListener("click", RollTheDice);
 Hold.addEventListener("click", HoldPoint);
 NewGame.addEventListener("click", Restart);
 Rools.addEventListener("click", FunRools);
+matBack.addEventListener("click", CloseFunRools);
+CloseRools.addEventListener("click", CloseFunRools);
